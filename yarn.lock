@@ -1503,6 +1503,11 @@
   "resolved" "https://registry.npmjs.org/@react-native-community/eslint-plugin/-/eslint-plugin-1.1.0.tgz"
   "version" "1.1.0"
 
+"@react-native-community/netinfo@^9.3.7":
+  "integrity" "sha512-+taWmE5WpBp0uS6kf+bouCx/sn89G9EpR4s2M/ReLvctVIFL2Qh8WnWfBxqK9qwgmFha/uqjSr2Gq03OOtiDcw=="
+  "resolved" "https://registry.npmjs.org/@react-native-community/netinfo/-/netinfo-9.3.7.tgz"
+  "version" "9.3.7"
+
 "@react-native-masked-view/masked-view@^0.2.8":
   "integrity" "sha512-+1holBPDF1yi/y0uc1WB6lA5tSNHhM7PpTMapT3ypvSnKQ9+C6sy/zfjxNxRA/llBQ1Ci6f94EaK56UCKs5lTA=="
   "resolved" "https://registry.npmjs.org/@react-native-masked-view/masked-view/-/masked-view-0.2.8.tgz"
@@ -5938,7 +5943,7 @@
   "resolved" "https://registry.npmjs.org/react-native-skeleton-placeholder/-/react-native-skeleton-placeholder-5.2.4.tgz"
   "version" "5.2.4"
 
-"react-native@*", "react-native@>=0.47", "react-native@>=0.50.1", "react-native@>=0.57", "react-native@>=0.64.0-rc.0 || 0.0.0-*", "react-native@0.64.0":
+"react-native@*", "react-native@>=0.47", "react-native@>=0.50.1", "react-native@>=0.57", "react-native@>=0.59", "react-native@>=0.64.0-rc.0 || 0.0.0-*", "react-native@0.64.0":
   "integrity" "sha512-8dhSHBthgGwAjU+OjqUEA49229ThPMQH7URH0u8L0xoQFCnZO2sZ9Wc6KcbxI0x9KSmjCMFFZqRe3w3QsRv64g=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.64.0.tgz"
   "version" "0.64.0"

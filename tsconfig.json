@@ -29,7 +29,8 @@
       "@types": ["src/types/"],
       "@screens": ["src/screens/"],
       "@context": ["src/context"],
-      "tests": ["__tests__/*"]
+      "tests": ["__tests__/*"],
+      "@utils": ["src/utils"]
     }
   },
   "exclude": [

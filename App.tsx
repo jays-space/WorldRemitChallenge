@@ -1,7 +1,7 @@
 import React from 'react';
 
 // CONTEXTS
-import {UsersContextProvider} from 'context';
+import {UsersContextProvider} from './src/context';
 
 // SCREENS
 import {HomeScreen} from '@screens';
