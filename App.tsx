@@ -1,11 +1,16 @@
 import React from 'react';
-import {SafeAreaView, Button} from 'react-native';
+
+// CONTEXTS
+import {UsersContextProvider} from 'context';
+
+// SCREENS
+import {HomeScreen} from '@screens';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <Button onPress={() => console.log('Click me')} title="Click me!" />
-    </SafeAreaView>
+    <UsersContextProvider>
+      <HomeScreen />
+    </UsersContextProvider>
   );
 };
 
