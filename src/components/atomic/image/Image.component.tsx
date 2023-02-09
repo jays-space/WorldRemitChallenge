@@ -7,6 +7,7 @@ interface IImage {
   source: string;
   size?: ImageSizeType;
   style?: StyleProp<ImageStyle>;
+  testID?: string;
 }
 
 /**
@@ -18,8 +19,20 @@ interface IImage {
  * @returns custom image component
  */
 
-const Image = ({source, size = 'sm', style = undefined}: IImage) => {
-  return <RNImage style={[style, getImageSize(size)]} source={{uri: source}} />;
+const Image = ({
+  source,
+  size = 'sm',
+  style = undefined,
+  testID = '',
+}: IImage) => {
+  return (
+    <RNImage
+      alt={source}
+      style={[style, getImageSize(size)]}
+      source={{uri: source}}
+      testID={testID}
+    />
+  );
 };
 
 export default Image;

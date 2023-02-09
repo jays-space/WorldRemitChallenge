@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --coverage --watchAll",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -23,6 +23,8 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@testing-library/jest-native": "^5.4.1",
+    "@testing-library/react-native": "^11.5.2",
     "@types/jest": "^29.4.0",
     "@types/react": "^18.0.27",
     "@types/react-native": "^0.71.2",
@@ -36,6 +38,31 @@
     "typescript": "^4.9.5"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "collectCoverageFrom": [
+      "!<rootDir>/App.tsx",
+      "!<rootDir>/index.js",
+      "!<rootDir>/.editorconfig",
+      "!<rootDir>/.eslintrc.js",
+      "!<rootDir>/.gitattributes",
+      "!<rootDir>/.prettierrc.js",
+      "!<rootDir>/.watchmanconfig",
+      "!<rootDir>/app.json",
+      "!<rootDir>/babel.config.js",
+      "!<rootDir>/metro.config.js",
+      "!<rootDir>/setupTests.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "html",
+      "text"
+    ]
   }
 }
